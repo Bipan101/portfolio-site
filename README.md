@@ -31,10 +31,53 @@ This is a personal portfolio website built with React.js, bundled using Vite, an
     npm install
     
 ```
-4. Run the project:
+4. Install React Router DOM
+To enable routing in the project:
 ```bash
-npm run dev
+npm install react-router-dom
+```
+5. Install Tailwind CSS
+Follow the steps to install and configure Tailwind CSS:
+
+Install Tailwind and its peer dependencies:
+```bash
+npm install -D tailwindcss postcss autoprefixer
+```
+Initialize Tailwind configuration:
+```bash
+npx tailwindcss init
+```
+In your tailwind.config.js, set the content to:
+```bash
+module.exports = {
+  content: [
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
 
 ```
+Add Tailwind’s directives to your src/index.css or a similar file:
+```bash
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ ```
+ OR
+ ```bash
+ @import 'tailwindcss/base';
+@import 'tailwindcss/utilities';
+@import 'tailwindcss/components';
+```
+6. Run the Project
+```bash
+npm run dev
+```
+
+
 ## Usage
 After running the project, you can access it at http://localhost:5173/. The portfolio features sections such as About, Github, and Contact, all navigable through the React Router.
