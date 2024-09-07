@@ -18,7 +18,7 @@ This is a personal portfolio website built with React.js, bundled using Vite, an
 
 1. Clone the repository:
  ```bash
-    git clone https://github.com/yourusername/your-portfolio.git
+    git clone https://github.com/Bipan101/portfolio-site.git
 
 ```
 2. Navigate to the project directory:
